@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="header__logo" src="img/logo.png" alt="Logo Principal" />
+      </a>
+    </header>
+
+    <nav class="navegacion">
+      <a class="navegacion__enlace navegacion__enlace--activo" href="index.html"
+        >Tienda</a
+      >
+      <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+      <h1>React JS</h1>
+
+      <div class="camisa">
+        <img src="img/3.jpg" alt="imagen del producto" class="camisa__imagen" />
+
+        <div class="camisa__contenido">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias
+          molestiae modi adipisci beatae animi cumque, dolores voluptatibus
+          asperiores nihil impedit quisquam explicabo non aperiam placeat,
+          reiciendis, voluptatum nostrum qui!</p>
+
+          <form action="POST" class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>--Seleccionar Talla--</option>
+              <option>Pequeña</option>
+              <option>Mediana</option>
+              <option>Grande</option>
+            </select>
+            <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+            <input class="formulario__submit" type="submit" value="Añadir al carrito">
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__texto">
+        Front End Store - Todos los derechos Reservdos 2022.
+      </p>
+    </footer>
+  </body>
+</html>
